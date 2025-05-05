@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+html {
+  font-size: 1vw;
+  font-family: "Lexend", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: #000;
+}
+
+.container {
+  width: 87.4375rem;
+  margin-inline: auto;
+}
+
+@media (max-width: 639.98px) {
+  html {
+    font-size: 4.267vw;
+  }
+
+  .container {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+}

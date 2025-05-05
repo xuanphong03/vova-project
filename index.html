@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/hero-section.css" />
+    <link rel="stylesheet" href="./assets/css/featured-product-section.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner container">
+        <div class="header-background">
+          <img
+            class="header-background-image"
+            alt=""
+            src="./assets/img/home/header-bg.svg"
+          />
+        </div>
+        <div class="header-background-mb">
+          <img
+            alt=""
+            class="header-background-mb__subtract"
+            src="./assets/img/home/header-bg-subtract-mb.svg"
+          />
+          <img
+            alt=""
+            class="header-background-mb__menu-area"
+            src="./assets/img/home/header-bg-menu-area.svg"
+          />
+        </div>
+        <div class="header-wrapper">
+          <a href="/" class="header__logo">
+            <img
+              class="header__logo-image"
+              alt=""
+              src="./assets/img/home/header-logo.svg"
+            />
+          </a>
+          <nav class="header__nav">
+            <div class="header__nav-tab">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Học</a>
+                </li>
+                <li class="header__nav-item">
+                  <span data-type="trigger-submenu" class="header__nav-link"
+                    >Khám phá
+                    <img
+                      alt=""
+                      src="./assets/img/home/arrow-down.svg"
+                      class="header__nav-link__icon-arrow-down"
+                    />
+                  </span>
+                  <div class="header__nav-item__submenu">
+                    <ul class="header__nav-item__submenu-list">
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Bóc</a
+                        >
+                      </li>
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Bật</a
+                        >
+                      </li>
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Ngắm</a
+                        >
+                      </li>
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Gặp</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__nav-item">
+                  <span data-type="trigger-submenu" class="header__nav-link"
+                    >Sách
+                    <img
+                      alt=""
+                      src="./assets/img/home/arrow-down.svg"
+                      class="header__nav-link__icon-arrow-down"
+                    />
+                  </span>
+                  <div class="header__nav-item__submenu">
+                    <ul class="header__nav-item__submenu-list">
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Bóc</a
+                        >
+                      </li>
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Bật</a
+                        >
+                      </li>
+                      <li class="header__nav-item__submenu-item">
+                        <a href="/" class="header__nav-item__submenu-link"
+                          >Ngắm</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Tìm việc</a>
+                </li>
+              </ul>
+              <div class="header__nav-about">
+                <a href="#" class="header__nav-about-link">Về Vova</a>
+              </div>
+            </div>
+          </nav>
+          <div class="header__contact">
+            <a href="/" class="header__contact-btn">
+              <custom-button-v1>Liên hệ</custom-button-v1>
+            </a>
+          </div>
+          <button class="menu-mobile-btn">
+            <img
+              alt=""
+              class="menu-mobile-btn__icon"
+              src="./assets/img/home/menu.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero-section">
+        <div class="hero-section-inner container">
+          <div class="hero-section-left">
+            <div class="hero-section-left-content">
+              <div class="hero-section-left-content__title">
+                <h1>
+                  <strong>Đồng Hành</strong> Tương Lai
+                  <strong>với Trí Tuệ Nhân Tạo</strong>
+                </h1>
+              </div>
+              <div
+                class="hero-section-right__banner-universe hero-section-right__banner-universe--mb"
+              >
+                <img src="./assets/img/hero-section/vu-tru.svg" alt="" />
+              </div>
+              <div class="hero-section-left-content__desc">
+                <p>
+                  Khám phá thế giới AI qua các khóa học được thiết kế sáng tạo,
+                  thực tiễn và cá nhân hóa, giúp bạn từ những bước đầu tiên đến
+                  việc làm chủ công nghệ tiên tiến, phù hợp với mọi trình độ và
+                  mục tiêu học tập.
+                </p>
+              </div>
+              <a href="/" class="hero-section-left-content__btn-detail">
+                <custom-button-v1>Bắt đầu học AI VUI sâu</custom-button-v1>
+              </a>
+            </div>
+          </div>
+          <div class="hero-section-right">
+            <div
+              class="hero-section-right__banner-universe hero-section-right__banner-universe--pc"
+            >
+              <img src="./assets/img/hero-section/vu-tru.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured-product-section">
+        <img
+          alt=""
+          class="space-station-item"
+          src="./assets/img/home/space-station.svg"
+        />
+        <div class="featured-product-inner">
+          <div class="featured-product-content container">
+            <div class="featured-product-content__title">
+              <h2>SẢN PHẨM NỔI BẬT</h2>
+            </div>
+            <div class="featured-product-content__desc">
+              <p>Kiến Thức Hot, Vova Thắp Sáng Bàn Làm Việc!</p>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper planet-slider featured-product-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slide-content planet">
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-default">
+                    <img
+                      src="./assets/img/featured-product-section/d_img-default-1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-active">
+                    <div class="planet__image-active__inner">
+                      <img
+                        src="./assets/img/featured-product-section/d_img-active-5.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="planet__image-active__read-more">
+                      <span class="planet__image-active__read-more__text"
+                        >Xem thêm</span
+                      >
+                      <img
+                        src="./assets/img/featured-product-section/arrow-right.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="planet__border">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseWrapper.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__ellipse">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseInner.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content planet">
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-default">
+                    <img
+                      src="./assets/img/featured-product-section/d_img-default-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-active">
+                    <div class="planet__image-active__inner">
+                      <img
+                        src="./assets/img/featured-product-section/d_img-active-5.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="planet__image-active__read-more">
+                      <span class="planet__image-active__read-more__text"
+                        >Xem thêm</span
+                      >
+                      <img
+                        src="./assets/img/featured-product-section/arrow-right.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="planet__border">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseWrapper.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__ellipse">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseInner.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content planet">
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-default">
+                    <img
+                      src="./assets/img/featured-product-section/d_img-default-3.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-active">
+                    <div class="planet__image-active__inner">
+                      <img
+                        src="./assets/img/featured-product-section/d_img-active-5.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="planet__image-active__read-more">
+                      <span class="planet__image-active__read-more__text"
+                        >Xem thêm</span
+                      >
+                      <img
+                        src="./assets/img/featured-product-section/arrow-right.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="planet__border">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseWrapper.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__ellipse">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseInner.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content planet">
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-default">
+                    <img
+                      src="./assets/img/featured-product-section/d_img-defaul-4.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-active">
+                    <div class="planet__image-active__inner">
+                      <img
+                        src="./assets/img/featured-product-section/d_img-active-5.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="planet__image-active__read-more">
+                      <span class="planet__image-active__read-more__text"
+                        >Xem thêm</span
+                      >
+                      <img
+                        src="./assets/img/featured-product-section/arrow-right.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="planet__border">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseWrapper.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__ellipse">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseInner.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-content planet">
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__icon-star">
+                    <img
+                      src="./assets/img/featured-product-section/Star.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-default">
+                    <img
+                      src="./assets/img/featured-product-section/d_img-default-5.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__image-active">
+                    <div class="planet__image-active__inner">
+                      <img
+                        src="./assets/img/featured-product-section/d_img-active-5.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="planet__image-active__read-more">
+                      <span class="planet__image-active__read-more__text"
+                        >Xem thêm</span
+                      >
+                      <img
+                        src="./assets/img/featured-product-section/arrow-right.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="planet__border">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseWrapper.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="planet__ellipse">
+                    <img
+                      src="./assets/img/featured-product-section/EllipseInner.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination-wrapper">
+              <img
+                class="swiper-slide__nav-bg"
+                src="./assets/img/featured-product-section/MaskGroup.svg"
+                alt=""
+              />
+              <img
+                class="swiper-slide__nav-bg--mb"
+                src="./assets/img/featured-product-section/MaskGroupMb.svg"
+                alt=""
+              />
+              <div class="swiper-slide__type-border">
+                <div class="swiper-slide__type">
+                  <span class="swiper-slide__type-content">Podcast</span>
+                </div>
+              </div>
+              <div class="swiper-slide__desc">
+                [Tốt hơn 1%] Tại sao càng lớn, ta lại thấy thời gian trôi đi
+                càng nhanh?
+              </div>
+              <div class="swiper-slide__nav">
+                <div
+                  class="swiper-slide__nav-button swiper-slide__nav-button--prev"
+                >
+                  <img
+                    src="./assets/img/featured-product-section//Arrow.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide__nav-number-wrapper">
+                  <span
+                    class="swiper-slide__nav-number swiper-slide__nav-number--current"
+                  ></span>
+                  <span>/</span>
+                  <span
+                    class="swiper-slide__nav-number swiper-slide__nav-number--total"
+                  ></span>
+                </div>
+                <div
+                  class="swiper-slide__nav-button swiper-slide__nav-button--next"
+                >
+                  <img
+                    src="./assets/img/featured-product-section//Arrow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="./assets/img/footer/footer-bg.svg" alt="" class="footer-bg" />
+      <div class="footer-content">
+        <div class="footer-content-inner">
+          <div class="footer-content-left">
+            <a href="/" class="footer-content-left__logo">
+              <img src="./assets/img/home/header-logo.svg" alt="" />
+            </a>
+            <div class="footer-content-left__title text-underline-svg">
+              <p>
+                Học <strong>Vui Sâu</strong><br />
+                Mỗi Ngày Cùng Vova
+              </p>
+            </div>
+            <div class="footer-content-left__desc">
+              Khóa học AI sáng tạo, thực tiễn, giúp bạn làm chủ công nghệ, phù
+              hợp mọi trình độ.
+            </div>
+            <div class="footer-content-left__social">
+              <div class="footer-content-left__social-title">
+                <p>Theo dõi chúng tôi</p>
+              </div>
+              <ul class="footer-content-left__social-list">
+                <li class="footer-content-left__social-item">
+                  <div class="footer-content-left__social-item__icon">
+                    <img src="./assets/img/footer/d_social1.svg" alt="" />
+                  </div>
+                </li>
+                <li class="footer-content-left__social-item">
+                  <div class="footer-content-left__social-item__icon">
+                    <img src="./assets/img/footer/d_social2.svg" alt="" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-right">
+            <div class="footer-content__service-list">
+              <div class="footer-content__service-item">
+                <div class="footer-content__service-item__content">
+                  <div class="footer-content__service-item__content-icon">
+                    <img src="./assets/img/footer/d_service1.svg" alt="" />
+                  </div>
+                  <div class="footer-content__service-item__content-title">
+                    <div
+                      class="footer-content__service-item__content-title__text"
+                    >
+                      Kích Hoạt <br />
+                      Đam Mê Công Nghệ
+                    </div>
+                    <div
+                      class="footer-content__service-item__content-title__icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        viewBox="0 0 35 35"
+                        fill="none"
+                      >
+                        <path
+                          d="M34.4843 17.8104C34.4843 8.5107 26.9454 0.971802 17.6457 0.971802C8.34603 0.971802 0.807129 8.5107 0.807129 17.8104C0.807129 27.1101 8.34603 34.649 17.6457 34.649C26.9454 34.649 34.4843 27.1101 34.4843 17.8104Z"
+                          fill="white"
+                        />
+                        <mask
+                          id="mask0_2222_34032"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="10"
+                          y="13"
+                          width="15"
+                          height="9"
+                        >
+                          <path
+                            d="M24.0882 13.2737H10.6348V21.7706H24.0882V13.2737Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_2222_34032)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M20.6988 13.9498L23.9138 17.1649C24.1111 17.3622 24.1111 17.682 23.9138 17.8793L20.6988 21.0944C20.5015 21.2917 20.1816 21.2917 19.9843 21.0944C19.787 20.8971 19.787 20.5772 19.9843 20.3799L22.337 18.0273H10.6348V17.017H22.337L19.9843 14.6643C19.787 14.467 19.787 14.1471 19.9843 13.9498C20.1816 13.7526 20.5015 13.7526 20.6988 13.9498Z"
+                            fill="black"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-content__service-item">
+                <div class="footer-content__service-item__content">
+                  <div class="footer-content__service-item__content-icon">
+                    <img src="./assets/img/footer/d_service1.svg" alt="" />
+                  </div>
+                  <div class="footer-content__service-item__content-title">
+                    <div
+                      class="footer-content__service-item__content-title__text"
+                    >
+                      Kích Hoạt <br />
+                      Đam Mê Công Nghệ
+                    </div>
+                    <div
+                      class="footer-content__service-item__content-title__icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        viewBox="0 0 35 35"
+                        fill="none"
+                      >
+                        <path
+                          d="M34.4843 17.8104C34.4843 8.5107 26.9454 0.971802 17.6457 0.971802C8.34603 0.971802 0.807129 8.5107 0.807129 17.8104C0.807129 27.1101 8.34603 34.649 17.6457 34.649C26.9454 34.649 34.4843 27.1101 34.4843 17.8104Z"
+                          fill="white"
+                        />
+                        <mask
+                          id="mask0_2222_34032"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="10"
+                          y="13"
+                          width="15"
+                          height="9"
+                        >
+                          <path
+                            d="M24.0882 13.2737H10.6348V21.7706H24.0882V13.2737Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_2222_34032)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M20.6988 13.9498L23.9138 17.1649C24.1111 17.3622 24.1111 17.682 23.9138 17.8793L20.6988 21.0944C20.5015 21.2917 20.1816 21.2917 19.9843 21.0944C19.787 20.8971 19.787 20.5772 19.9843 20.3799L22.337 18.0273H10.6348V17.017H22.337L19.9843 14.6643C19.787 14.467 19.787 14.1471 19.9843 13.9498C20.1816 13.7526 20.5015 13.7526 20.6988 13.9498Z"
+                            fill="black"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-content__service-item">
+                <div class="footer-content__service-item__content">
+                  <div class="footer-content__service-item__content-icon">
+                    <img src="./assets/img/footer/d_service1.svg" alt="" />
+                  </div>
+                  <div class="footer-content__service-item__content-title">
+                    <div
+                      class="footer-content__service-item__content-title__text"
+                    >
+                      Kích Hoạt <br />
+                      Đam Mê Công Nghệ
+                    </div>
+                    <div
+                      class="footer-content__service-item__content-title__icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        viewBox="0 0 35 35"
+                        fill="none"
+                      >
+                        <path
+                          d="M34.4843 17.8104C34.4843 8.5107 26.9454 0.971802 17.6457 0.971802C8.34603 0.971802 0.807129 8.5107 0.807129 17.8104C0.807129 27.1101 8.34603 34.649 17.6457 34.649C26.9454 34.649 34.4843 27.1101 34.4843 17.8104Z"
+                          fill="white"
+                        />
+                        <mask
+                          id="mask0_2222_34032"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="10"
+                          y="13"
+                          width="15"
+                          height="9"
+                        >
+                          <path
+                            d="M24.0882 13.2737H10.6348V21.7706H24.0882V13.2737Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_2222_34032)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M20.6988 13.9498L23.9138 17.1649C24.1111 17.3622 24.1111 17.682 23.9138 17.8793L20.6988 21.0944C20.5015 21.2917 20.1816 21.2917 19.9843 21.0944C19.787 20.8971 19.787 20.5772 19.9843 20.3799L22.337 18.0273H10.6348V17.017H22.337L19.9843 14.6643C19.787 14.467 19.787 14.1471 19.9843 13.9498C20.1816 13.7526 20.5015 13.7526 20.6988 13.9498Z"
+                            fill="black"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-content__service-item">
+                <div class="footer-content__service-item__content">
+                  <div class="footer-content__service-item__content-icon">
+                    <img src="./assets/img/footer/d_service1.svg" alt="" />
+                  </div>
+                  <div class="footer-content__service-item__content-title">
+                    <div
+                      class="footer-content__service-item__content-title__text"
+                    >
+                      Kích Hoạt <br />
+                      Đam Mê Công Nghệ
+                    </div>
+                    <div
+                      class="footer-content__service-item__content-title__icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        viewBox="0 0 35 35"
+                        fill="none"
+                      >
+                        <path
+                          d="M34.4843 17.8104C34.4843 8.5107 26.9454 0.971802 17.6457 0.971802C8.34603 0.971802 0.807129 8.5107 0.807129 17.8104C0.807129 27.1101 8.34603 34.649 17.6457 34.649C26.9454 34.649 34.4843 27.1101 34.4843 17.8104Z"
+                          fill="white"
+                        />
+                        <mask
+                          id="mask0_2222_34032"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="10"
+                          y="13"
+                          width="15"
+                          height="9"
+                        >
+                          <path
+                            d="M24.0882 13.2737H10.6348V21.7706H24.0882V13.2737Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_2222_34032)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M20.6988 13.9498L23.9138 17.1649C24.1111 17.3622 24.1111 17.682 23.9138 17.8793L20.6988 21.0944C20.5015 21.2917 20.1816 21.2917 19.9843 21.0944C19.787 20.8971 19.787 20.5772 19.9843 20.3799L22.337 18.0273H10.6348V17.017H22.337L19.9843 14.6643C19.787 14.467 19.787 14.1471 19.9843 13.9498C20.1816 13.7526 20.5015 13.7526 20.6988 13.9498Z"
+                            fill="black"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-copyright-inner container">
+          <p class="footer-copyright__content">
+            @2025 - Copyright owned by Vova Education
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/web-components.js"></script>
+    <script src="./assets/js/global.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/featured-product-section.js"></script>
+    <script src="./assets/js/footer.js"></script>
+  </body>
+</html>
