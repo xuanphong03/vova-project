@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   if (!isMobile) {
-    swiperConfig.coverflowEffect = {
+    planetSwiper.coverflowEffect = {
       rotate: 0,
       stretch: 0,
       depth: 0,
