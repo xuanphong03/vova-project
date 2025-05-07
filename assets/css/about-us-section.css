@@ -1,0 +1,155 @@
+.about-us {
+  position: relative;
+  margin-bottom: 14.8125rem;
+}
+.about-us .about-us-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us .about-us__title {
+  margin-bottom: 1.5rem;
+}
+.about-us .about-us__subtitle {
+  width: 43rem;
+  margin-bottom: 4rem;
+}
+.about-us .about-us__achievement-list {
+  display: flex;
+  width: 67.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us .about-us__achievement-item {
+  position: relative;
+  width: 13.625rem;
+  height: 6.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-us .about-us__achievement-item:not(:last-child)::after {
+  content: "";
+  right: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 0.0625rem;
+  height: 4.8125rem;
+  opacity: 0.4;
+  background: #c5c5c5;
+}
+.about-us .about-us__achievement-item__header {
+  margin-bottom: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+.about-us .about-us__achievement-item__header-icon {
+  margin-right: 1.25rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.about-us .about-us__achievement-item__header-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.about-us .about-us__achievement-item__header-number {
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 3.3rem */
+  letter-spacing: 0.01563rem;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.54) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: flex-end;
+}
+.about-us .about-us__achievement-item__content {
+  color: var(--ALL-WHITE, #fff);
+  font-family: Lexend;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.4rem */
+  letter-spacing: 0.01563rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 639.98px) {
+  .about-us {
+    margin-bottom: 4.5rem;
+  }
+  .about-us .about-us-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us .about-us__title {
+    margin-bottom: 0.625rem;
+  }
+  .about-us .about-us__subtitle {
+    width: 19.6875rem;
+    margin-bottom: 2rem;
+  }
+  .about-us .about-us__achievement-list {
+    display: flex;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.75rem;
+  }
+  .about-us .about-us__achievement-item {
+    width: 100%;
+    height: auto;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-us .about-us__achievement-item:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+  .about-us .about-us__achievement-item:not(:last-child)::after,
+  .about-us .about-us__achievement-item:last-child::after {
+    content: "";
+    right: unset;
+    left: 50%;
+    top: -1.75rem;
+    transform: translate(-50%, 0);
+    position: absolute;
+    width: 21.4375rem;
+    height: 0.0625rem;
+    opacity: 0.4;
+    background: #c5c5c5;
+  }
+  .about-us .about-us__achievement-item__header {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 1.125rem;
+  }
+  .about-us .about-us__achievement-item__header-icon {
+    margin-right: 0.625rem;
+    width: 2.375rem;
+    height: 2.375rem;
+  }
+  .about-us .about-us__achievement-item__header-icon img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us .about-us__achievement-item__header-number {
+    font-size: 2rem;
+  }
+  .about-us .about-us__achievement-item__content {
+    font-size: 0.75rem;
+    width: 12.0625rem;
+  }
+  .about-us .about-us__achievement-item__content br {
+    display: none;
+  }
+}

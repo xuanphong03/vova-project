@@ -12,8 +12,12 @@ html {
   font-family: "Lexend", sans-serif;
 }
 body {
-  min-height: 100vh;
   background: #000;
+  background-image: url("../img/home/home-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .container {
@@ -31,3 +35,27 @@ body {
     padding-inline: 1rem;
   }
 }
+/* 
+.num-container {
+  display: inline-flex;
+  overflow: hidden;
+  width: max-content;
+  position: relative;
+}
+.number_parent {
+  position: relative;
+  overflow: hidden;
+  width: 2rem;
+}
+.number_child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+}
+.number_child div {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

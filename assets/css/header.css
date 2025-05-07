@@ -175,10 +175,15 @@
 
   .header .header-background-mb {
     position: absolute;
-    inset: 1rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 1rem;
+    right: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(12.316715240478516px);
+    border-radius: 0.5rem;
   }
   .header .header-background-mb::before {
     content: "";

@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/hero-section.css" />
     <link rel="stylesheet" href="./assets/css/featured-product-section.css" />
+    <link rel="stylesheet" href="./assets/css/service-section.css" />
+    <link rel="stylesheet" href="./assets/css/partner-section.css" />
+    <link rel="stylesheet" href="./assets/css/about-us-section.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
   </head>
   <body>
     <header class="header">
@@ -140,20 +146,37 @@
     </header>
 
     <main class="main">
+      <!-- Section: Hero -->
       <section class="hero-section">
+        <img
+          alt=""
+          class="hero-section__star"
+          src="./assets/img/hero-section/ngoi-sao.svg"
+        />
+        <img
+          alt=""
+          class="hero-section__star"
+          src="./assets/img/hero-section/ngoi-sao.svg"
+        />
+        <img
+          alt=""
+          class="hero-section__star"
+          src="./assets/img/hero-section/ngoi-sao.svg"
+        />
+
         <div class="hero-section-inner container">
           <div class="hero-section-left">
             <div class="hero-section-left-content">
               <div class="hero-section-left-content__title">
                 <h1>
-                  <strong>Đồng Hành</strong> Tương Lai
-                  <strong>với Trí Tuệ Nhân Tạo</strong>
+                  Đồng Hành <strong>Tương Lai</strong> <br />
+                  với Trí Tuệ Nhân Tạo
                 </h1>
               </div>
               <div
                 class="hero-section-right__banner-universe hero-section-right__banner-universe--mb"
               >
-                <img src="./assets/img/hero-section/vu-tru.svg" alt="" />
+                <img src="./assets/img/hero-section/hero-bg.svg" alt="" />
               </div>
               <div class="hero-section-left-content__desc">
                 <p>
@@ -172,42 +195,56 @@
             <div
               class="hero-section-right__banner-universe hero-section-right__banner-universe--pc"
             >
-              <img src="./assets/img/hero-section/vu-tru.svg" alt="" />
+              <img src="./assets/img/hero-section/hero-bg.svg" alt="" />
             </div>
+            <!-- <div class="hero-section-right__card-tag">
+              <div class="hero-section-right__card-tag__content">
+                <div class="hero-section-right__card-tag__content-title">
+                  AI GENERATING
+                </div>
+                <div class="hero-section-right__card-tag__content-subtitle">
+                  Vova soạn giáo án
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
+
+      <!-- Section: Sản phẩm nổi bật -->
       <section class="featured-product-section">
         <img
           alt=""
           class="space-station-item"
           src="./assets/img/home/space-station.svg"
         />
+        <img
+          alt=""
+          class="meteorite-item"
+          src="./assets/img/featured-product-section/thien-thach.svg"
+        />
         <div class="featured-product-inner">
           <div class="featured-product-content container">
-            <div class="featured-product-content__title">
+            <custom-title-v1 class="featured-product-content__title">
               <h2>SẢN PHẨM NỔI BẬT</h2>
-            </div>
-            <div class="featured-product-content__desc">
+            </custom-title-v1>
+            <custom-description-v1 class="featured-product-content__desc">
               <p>Kiến Thức Hot, Vova Thắp Sáng Bàn Làm Việc!</p>
-            </div>
+            </custom-description-v1>
           </div>
-          <!-- Slider main container -->
           <div class="swiper planet-slider featured-product-slider">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
                 <div class="slide-content planet">
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
@@ -251,13 +288,13 @@
                 <div class="slide-content planet">
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
@@ -301,13 +338,13 @@
                 <div class="slide-content planet">
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
@@ -351,13 +388,13 @@
                 <div class="slide-content planet">
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
@@ -401,13 +438,13 @@
                 <div class="slide-content planet">
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
                   <div class="planet__icon-star">
                     <img
-                      src="./assets/img/featured-product-section/Star.svg"
+                      src="./assets/img/featured-product-section/ngoi-sao.svg"
                       alt=""
                     />
                   </div>
@@ -494,6 +531,457 @@
                     alt=""
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Lĩnh vực - Dịch vụ -->
+      <section class="service-section">
+        <img
+          class="service-section__background-vision-moon-surface"
+          src="./assets/img/service-section/vision-moon-surface.png"
+          alt=""
+        />
+        <div class="service-section-inner">
+          <div class="service-section__top">
+            <custom-title-v1 class="service-section__title">
+              <h2>Lĩnh vực</h2>
+            </custom-title-v1>
+            <custom-description-v1 class="service-section__subtitle">
+              <p>
+                Thiết kế dịch vụ <br />
+                trong nhiều nền tảng
+              </p>
+            </custom-description-v1>
+          </div>
+
+          <div class="service-section__bottom">
+            <div class="service-section__service-list">
+              <a href="/">
+                <article class="service-section__service-item">
+                  <div class="service-section__service-item__thumbnail">
+                    <img
+                      alt=""
+                      src="./assets/img/service-section/d_service1.png"
+                    />
+                  </div>
+                  <div class="service-section__service-item__content">
+                    <h4 class="service-section__service-item__content-title">
+                      Kích hoạt <br />
+                      đam mê công nghệ
+                    </h4>
+                    <button
+                      class="service-section__service-item__discovery-now"
+                    >
+                      <span
+                        class="service-section__service-item__discovery-now__text"
+                      >
+                        Khám phá
+                      </span>
+                      <svg
+                        class="service-section__service-item__discovery-now__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="10"
+                        viewBox="0 0 9 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.62012 1L7.66678 5.04667L3.62012 9.09333"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M0 5.04663L7.33333 5.04663"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
+              <a href="/">
+                <article class="service-section__service-item">
+                  <div class="service-section__service-item__thumbnail">
+                    <img
+                      alt=""
+                      src="./assets/img/service-section/d_service1.png"
+                    />
+                  </div>
+                  <div class="service-section__service-item__content">
+                    <h4 class="service-section__service-item__content-title">
+                      Kích hoạt <br />
+                      đam mê công nghệ
+                    </h4>
+                    <button
+                      class="service-section__service-item__discovery-now"
+                    >
+                      <span
+                        class="service-section__service-item__discovery-now__text"
+                      >
+                        Khám phá
+                      </span>
+                      <svg
+                        class="service-section__service-item__discovery-now__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="10"
+                        viewBox="0 0 9 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.62012 1L7.66678 5.04667L3.62012 9.09333"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M0 5.04663L7.33333 5.04663"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
+              <a href="/">
+                <article class="service-section__service-item">
+                  <div class="service-section__service-item__thumbnail">
+                    <img
+                      alt=""
+                      src="./assets/img/service-section/d_service1.png"
+                    />
+                  </div>
+                  <div class="service-section__service-item__content">
+                    <h4 class="service-section__service-item__content-title">
+                      Kích hoạt <br />
+                      đam mê công nghệ
+                    </h4>
+                    <button
+                      class="service-section__service-item__discovery-now"
+                    >
+                      <span
+                        class="service-section__service-item__discovery-now__text"
+                      >
+                        Khám phá
+                      </span>
+                      <svg
+                        class="service-section__service-item__discovery-now__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="10"
+                        viewBox="0 0 9 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.62012 1L7.66678 5.04667L3.62012 9.09333"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M0 5.04663L7.33333 5.04663"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
+              <a href="/">
+                <article class="service-section__service-item">
+                  <div class="service-section__service-item__thumbnail">
+                    <img
+                      alt=""
+                      src="./assets/img/service-section/d_service1.png"
+                    />
+                  </div>
+                  <div class="service-section__service-item__content">
+                    <h4 class="service-section__service-item__content-title">
+                      Kích hoạt <br />
+                      đam mê công nghệ
+                    </h4>
+                    <button
+                      class="service-section__service-item__discovery-now"
+                    >
+                      <span
+                        class="service-section__service-item__discovery-now__text"
+                      >
+                        Khám phá
+                      </span>
+                      <svg
+                        class="service-section__service-item__discovery-now__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="10"
+                        viewBox="0 0 9 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.62012 1L7.66678 5.04667L3.62012 9.09333"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M0 5.04663L7.33333 5.04663"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
+              <a href="/">
+                <article class="service-section__service-item">
+                  <div class="service-section__service-item__thumbnail">
+                    <img
+                      alt=""
+                      src="./assets/img/service-section/d_service1.png"
+                    />
+                  </div>
+                  <div class="service-section__service-item__content">
+                    <h4 class="service-section__service-item__content-title">
+                      Kích hoạt <br />
+                      đam mê công nghệ
+                    </h4>
+                    <button
+                      class="service-section__service-item__discovery-now"
+                    >
+                      <span
+                        class="service-section__service-item__discovery-now__text"
+                      >
+                        Khám phá
+                      </span>
+                      <svg
+                        class="service-section__service-item__discovery-now__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="10"
+                        viewBox="0 0 9 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.62012 1L7.66678 5.04667L3.62012 9.09333"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M0 5.04663L7.33333 5.04663"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
+              <a href="/">
+                <article class="service-section__service-item">
+                  <div class="service-section__service-item__thumbnail">
+                    <img
+                      alt=""
+                      src="./assets/img/service-section/d_service1.png"
+                    />
+                  </div>
+                  <div class="service-section__service-item__content">
+                    <h4 class="service-section__service-item__content-title">
+                      Kích hoạt <br />
+                      đam mê công nghệ
+                    </h4>
+                    <button
+                      class="service-section__service-item__discovery-now"
+                    >
+                      <span
+                        class="service-section__service-item__discovery-now__text"
+                      >
+                        Khám phá
+                      </span>
+                      <svg
+                        class="service-section__service-item__discovery-now__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="10"
+                        viewBox="0 0 9 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.62012 1L7.66678 5.04667L3.62012 9.09333"
+                          stroke="white"
+                          stroke-width="1.2"
+                          stroke-miterlimit="10"
+                        />
+                        <path
+                          d="M0 5.04663L7.33333 5.04663"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Đối tác tin cậy -->
+      <!-- <section class="partner">
+        <div class="partner-inner">
+          <div class="partner__title">
+            <h2>Đối tác</h2>
+          </div>
+          <div class="partner__subtitle">
+            Các Đối Tác Tin Cậy <br />
+            Sử Dụng Vova
+          </div>
+          <div class="partner__desc">
+            Helping you to protect all your digital activity and data from
+            unwanted third party by using PrismAGI
+          </div>
+          <div class="partner__list">
+            <div class="slider" data-speed="fast">
+              <ul class="slider-list slider__inner">
+                <li class="slider-item">
+                  <img src="./assets/img/partner/d_company_1.svg" alt="" />
+                </li>
+                <li class="slider-item">
+                  <img src="./assets/img/partner/d_company_2.svg" alt="" />
+                </li>
+                <li class="slider-item">
+                  <img src="./assets/img/partner/d_company_3.svg" alt="" />
+                </li>
+                <li class="slider-item">
+                  <img src="./assets/img/partner/d_company_4.svg" alt="" />
+                </li>
+                <li class="slider-item">
+                  <img src="./assets/img/partner/d_company_5.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          alt=""
+          class="partner-bg"
+          src="./assets/img/partner/partner-bg.png"
+        />
+      </section> -->
+
+      <!-- Section: Về chúng tôi -->
+      <section class="about-us">
+        <div class="about-us-inner">
+          <custom-title-v1 class="about-us__title">
+            <h2>VỀ CHÚNG TÔI</h2>
+          </custom-title-v1>
+          <custom-description-v1 class="about-us__subtitle">
+            <p>Cùng Vova Học tập hiệu quả, trải nghiệm thông minh</p>
+          </custom-description-v1>
+          <div class="about-us__achievement-list">
+            <div class="about-us__achievement-item">
+              <div class="about-us__achievement-item__header">
+                <div class="about-us__achievement-item__header-icon">
+                  <img
+                    alt=""
+                    src="./assets/img/about-us-section/d_about-us-1.svg"
+                  />
+                </div>
+                <div class="about-us__achievement-item__header-number">
+                  <span
+                    class="about-us__achievement-item__header-number__text num-container"
+                  >
+                    103
+                  </span>
+                  +
+                </div>
+              </div>
+              <div class="about-us__achievement-item__content">
+                Nguồn tài liệu <br />
+                đa dạng phù hợp
+              </div>
+            </div>
+            <div class="about-us__achievement-item">
+              <div class="about-us__achievement-item__header">
+                <div class="about-us__achievement-item__header-icon">
+                  <img
+                    alt=""
+                    src="./assets/img/about-us-section/d_about-us-2.svg"
+                  />
+                </div>
+                <div class="about-us__achievement-item__header-number">
+                  <span
+                    class="about-us__achievement-item__header-number__text num-container"
+                  >
+                    9 </span
+                  >/10
+                </div>
+              </div>
+              <div class="about-us__achievement-item__content">
+                Đánh giá khách hàng <br />sử dụng nền tảng Vova
+              </div>
+            </div>
+            <div class="about-us__achievement-item">
+              <div class="about-us__achievement-item__header">
+                <div class="about-us__achievement-item__header-icon">
+                  <img
+                    alt=""
+                    src="./assets/img/about-us-section/d_about-us-3.svg"
+                  />
+                </div>
+                <div class="about-us__achievement-item__header-number">
+                  <span
+                    class="about-us__achievement-item__header-number__text num-container"
+                  >
+                    95
+                  </span>
+                  +
+                </div>
+              </div>
+              <div class="about-us__achievement-item__content">
+                Giảng viên uy tín <br />biên soạn khóa học
+              </div>
+            </div>
+            <div class="about-us__achievement-item">
+              <div class="about-us__achievement-item__header">
+                <div class="about-us__achievement-item__header-icon">
+                  <img
+                    alt=""
+                    src="./assets/img/about-us-section/d_about-us-1.svg"
+                  />
+                </div>
+                <div class="about-us__achievement-item__header-number">
+                  <span
+                    class="about-us__achievement-item__header-number__text num-container"
+                  >
+                    200
+                  </span>
+                  +
+                </div>
+              </div>
+              <div class="about-us__achievement-item__content">
+                Học viên tham gia các <br />
+                khóa học
               </div>
             </div>
           </div>
@@ -763,7 +1251,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       type="module"
@@ -777,7 +1265,10 @@
     <script src="./assets/js/web-components.js"></script>
     <script src="./assets/js/global.js"></script>
     <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/hero-section.js"></script>
     <script src="./assets/js/featured-product-section.js"></script>
+    <script src="./assets/js/partner-section.js"></script>
+    <script src="./assets/js/increment-number.js"></script>
     <script src="./assets/js/footer.js"></script>
   </body>
 </html>

@@ -67,7 +67,6 @@ window.addEventListener("DOMContentLoaded", () => {
             border-radius: 2rem;
             transition: width 500ms cubic-bezier(0.91, 0.02, 0.13, 0.99);
         }
-       
         .compound-btn-arrow svg {
             width: 3rem;
             height: 100%;
@@ -152,5 +151,136 @@ window.addEventListener("DOMContentLoaded", () => {
     `;
     }
   }
+
+  class CustomTitleV1 extends BaseElement {
+    static get observedAttributes() {
+      return ["color"];
+    }
+
+    connectedCallback() {
+      this.render();
+      this.loadStyle();
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+      if (name === "color" && oldValue !== newValue) {
+        this.render();
+      }
+    }
+
+    loadStyle() {
+      const css = `
+        ${COMMON_STYLES}
+        .title {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(0deg, #D8F8DC 0%, #98EFA5 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .title::before,
+        .title::after {
+          content: "";
+          width: 5.375rem;
+          height: 0.0625rem;
+          background: linear-gradient(90deg, rgba(216, 236, 248, 0.00) 0%, #A6FFBE 100%);
+        }
+        .title::before {
+          margin-right: 1.5rem;
+        }
+        .title::after {
+          margin-left: 1.5rem;
+          rotate: 180deg;
+        }
+        slot {
+          text-shadow: 0px 2px 16px rgba(174, 207, 242, 0.24);
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0.025rem;
+          
+          text-transform: uppercase;
+        }
+
+        @media (max-width: 639.98px) {
+          slot {
+            font-size: 0.625rem;
+          }
+          .about-us__title::before {
+            margin-right: 0.75rem;
+          }
+          .about-us__title::after {
+            margin-left: 0.75rem
+          }
+        }
+        `;
+      this.addStyleToShadowRoot(css);
+    }
+
+    render() {
+      this.shadowRoot.innerHTML = `
+      <div class="title">
+        <slot></slot>   
+      </div>
+    `;
+    }
+  }
+
+  class CustomDescriptionV1 extends BaseElement {
+    static get observedAttributes() {
+      return ["color"];
+    }
+
+    connectedCallback() {
+      this.render();
+      this.loadStyle();
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+      if (name === "color" && oldValue !== newValue) {
+        this.render();
+      }
+    }
+
+    loadStyle() {
+      const css = `
+        ${COMMON_STYLES}
+        .description {
+          text-align: center;
+          font-family: "Plus Jakarta Sans";
+          font-size: 3rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%; /* 3.6rem */
+          text-transform: capitalize;
+          background: linear-gradient(0deg, #D8F8E1 0%, #98EFAF 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      
+        @media (max-width: 639.98px) {
+          .description {
+            font-size: 1.25rem;
+          }
+        }
+        `;
+      this.addStyleToShadowRoot(css);
+    }
+
+    render() {
+      this.shadowRoot.innerHTML = `
+      <div class="description">
+        <slot></slot>   
+      </div>
+    `;
+    }
+  }
+
   customElements.define("custom-button-v1", CustomButtonV1);
+  customElements.define("custom-title-v1", CustomTitleV1);
+  customElements.define("custom-description-v1", CustomDescriptionV1);
 });

@@ -12,33 +12,25 @@ window.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-slide__nav-button--prev",
     },
     allowTouchMove: false,
-    effect: "coverflow",
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 300,
-      modifier: 1,
-      slideShadows: false,
-    },
+    effect: !isMobile ? "coverflow" : "",
+    coverflowEffect: !isMobile
+      ? {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        }
+      : {},
   });
-
-  if (!isMobile) {
-    planetSwiper.coverflowEffect = {
-      rotate: 0,
-      stretch: 0,
-      depth: 0,
-      modifier: 1,
-      slideShadows: false,
-    };
-  }
 
   const featuredProductSectionEl = document.querySelector(
     ".featured-product-section"
   );
-  const currentSlideIndexEl = featuredProductSectionEl.querySelector(
+  const currentSlideIndexEl = featuredProductSectionEl?.querySelector(
     ".swiper-slide__nav-number--current"
   );
-  const totalSlideEl = featuredProductSectionEl.querySelector(
+  const totalSlideEl = featuredProductSectionEl?.querySelector(
     ".swiper-slide__nav-number--total"
   );
 
@@ -46,12 +38,13 @@ window.addEventListener("DOMContentLoaded", function () {
     // Lấy tổng số slide thực (bỏ qua các slide bị nhân bản do loop)
     const totalSlides =
       planetSwiper.slides.length - planetSwiper.loopedSlides * 2;
+    if (!totalSlides) return;
     totalSlideEl.textContent =
       totalSlides < 10 ? "0" + totalSlides : totalSlides;
   };
   const handleSetCurrentSlideIndex = () => {
-    // Lấy chỉ số thực (realIndex bắt đầu từ 0)
     const currentIndex = planetSwiper.realIndex + 1;
+    if (!currentSlideIndexEl) return;
     currentSlideIndexEl.textContent =
       currentIndex < 10 ? "0" + currentIndex : currentIndex;
   };
@@ -64,7 +57,6 @@ window.addEventListener("DOMContentLoaded", function () {
     handleSetCurrentSlideIndex();
   });
 
-  // Kích hoạt sự kiện "init"
   handleSetTotalSlide();
   handleSetCurrentSlideIndex();
   planetSwiper.init();

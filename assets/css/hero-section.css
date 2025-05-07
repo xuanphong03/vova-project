@@ -1,6 +1,22 @@
 .hero-section {
   position: relative;
-  margin-bottom: 9.375rem;
+}
+.hero-section > .hero-section__star {
+  position: absolute;
+  width: 0.92619rem;
+  height: 1.0585rem;
+}
+.hero-section > .hero-section__star:nth-child(1) {
+  top: 1.3125rem;
+  left: 4.0625rem;
+}
+.hero-section > .hero-section__star:nth-child(2) {
+  top: 3.375rem;
+  left: 43.3125rem;
+}
+.hero-section > .hero-section__star:nth-child(3) {
+  top: 33rem;
+  left: 6.9375rem;
 }
 .hero-section .hero-section-inner {
   display: flex;
@@ -15,8 +31,6 @@
   gap: 2rem;
   flex-shrink: 0;
 }
-.hero-section .hero-section-left-content {
-}
 .hero-section .hero-section-left-content__title {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
@@ -24,7 +38,6 @@
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.03125rem;
-  /* background: var(--gr, linear-gradient(0deg, #d8f8e1 0%, #98efaf 100%)); */
   background: var(
     --gradient,
     linear-gradient(90deg, #ccfbb6 0%, #6dffee 50.41%, #88ff6b 100%)
@@ -34,12 +47,22 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 1.5rem;
 }
+.hero-section .hero-section-left-content__title br {
+  display: none;
+}
 .hero-section .hero-section-left-content__title strong {
+  position: relative;
   background: var(--gr, linear-gradient(0deg, #d8f8e1 0%, #98efaf 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+.hero-section .hero-section-left-content__title strong svg {
+  position: absolute;
+  top: 4.78806rem;
+  left: 0;
+  width: 18.1875rem;
 }
 .hero-section .hero-section-left-content__desc {
   color: rgba(255, 255, 255, 0.6);
@@ -55,9 +78,15 @@
   cursor: pointer;
 }
 .hero-section .hero-section-right {
+  position: relative;
   width: 38.4375rem;
   height: 38.4375rem;
   flex-shrink: 0;
+}
+.hero-section .hero-section-right__card-tag {
+  position: absolute;
+  top: 32.7598rem;
+  left: -1.0803rem;
 }
 .hero-section .hero-section-right__banner-universe {
   width: 100%;
@@ -91,8 +120,6 @@
     flex-shrink: 0;
   }
 
-  .hero-section .hero-section-left-content {
-  }
   .hero-section .hero-section-left-content__title {
     padding-top: 1.5rem;
     font-size: 1.75rem;
@@ -131,5 +158,16 @@
     margin-inline: auto;
     margin-top: -0.625rem;
     margin-bottom: 1.75rem;
+  }
+  .hero-section .hero-section-left-content__title strong svg {
+    top: 2.5rem;
+    width: 8.49619rem;
+    height: 0.40094rem;
+  }
+  .hero-section .hero-section-left-content__title br {
+    display: block;
+  }
+  .hero-section > .hero-section__star {
+    display: none;
   }
 }
