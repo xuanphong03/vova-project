@@ -1,8 +1,12 @@
 .header {
-  position: sticky;
-  top: 0;
-  padding-top: 1.8125rem;
+  /* position: sticky; */
+  /* top: 0; */
+  /* padding-top: 1.8125rem; */
   z-index: 100;
+  position: fixed;
+  top: 1.8125rem;
+  left: 0;
+  right: 0;
 }
 .header .header-inner {
   position: relative;

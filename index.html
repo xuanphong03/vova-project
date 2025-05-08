@@ -15,11 +15,9 @@
     <link rel="stylesheet" href="./assets/css/featured-product-section.css" />
     <link rel="stylesheet" href="./assets/css/service-section.css" />
     <link rel="stylesheet" href="./assets/css/partner-section.css" />
+    <link rel="stylesheet" href="./assets/css/news-section.css" />
     <link rel="stylesheet" href="./assets/css/about-us-section.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
   </head>
   <body>
     <header class="header">
@@ -197,22 +195,15 @@
             >
               <img src="./assets/img/hero-section/hero-bg.svg" alt="" />
             </div>
-            <!-- <div class="hero-section-right__card-tag">
-              <div class="hero-section-right__card-tag__content">
-                <div class="hero-section-right__card-tag__content-title">
-                  AI GENERATING
-                </div>
-                <div class="hero-section-right__card-tag__content-subtitle">
-                  Vova soạn giáo án
-                </div>
-              </div>
-            </div> -->
+            <div class="hero-section-right__card-tag">
+              <img src="./assets/img/hero-section/hero-card.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Section: Sản phẩm nổi bật -->
-      <section class="featured-product-section">
+      <section class="featured-product">
         <img
           alt=""
           class="space-station-item"
@@ -232,7 +223,7 @@
               <p>Kiến Thức Hot, Vova Thắp Sáng Bàn Làm Việc!</p>
             </custom-description-v1>
           </div>
-          <div class="swiper planet-slider featured-product-slider">
+          <div class="swiper planet-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slide-content planet">
@@ -485,52 +476,99 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination-wrapper">
-              <img
-                class="swiper-slide__nav-bg"
-                src="./assets/img/featured-product-section/MaskGroup.svg"
-                alt=""
-              />
-              <img
-                class="swiper-slide__nav-bg--mb"
-                src="./assets/img/featured-product-section/MaskGroupMb.svg"
-                alt=""
-              />
-              <div class="swiper-slide__type-border">
-                <div class="swiper-slide__type">
-                  <span class="swiper-slide__type-content">Podcast</span>
+          </div>
+          <div class="swiper swiper-pagination-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__type-border">
+                  <div class="swiper-slide__type">
+                    <span class="swiper-slide__type-content">Podcast</span>
+                  </div>
+                </div>
+                <div class="swiper-slide__desc">
+                  [Tốt hơn 1%] Tại sao càng lớn, ta lại thấy thời gian trôi đi
+                  càng nhanh?
                 </div>
               </div>
-              <div class="swiper-slide__desc">
-                [Tốt hơn 1%] Tại sao càng lớn, ta lại thấy thời gian trôi đi
-                càng nhanh?
+              <div class="swiper-slide">
+                <div class="swiper-slide__type-border">
+                  <div class="swiper-slide__type">
+                    <span class="swiper-slide__type-content">Video</span>
+                  </div>
+                </div>
+                <div class="swiper-slide__desc">
+                  Figma Variable - Các kỹ năng nâng cao trong quản lý hệ thống
+                </div>
               </div>
-              <div class="swiper-slide__nav">
-                <div
-                  class="swiper-slide__nav-button swiper-slide__nav-button--prev"
-                >
-                  <img
-                    src="./assets/img/featured-product-section//Arrow.svg"
-                    alt=""
-                  />
+              <div class="swiper-slide">
+                <div class="swiper-slide__type-border">
+                  <div class="swiper-slide__type">
+                    <span class="swiper-slide__type-content">Podcast</span>
+                  </div>
                 </div>
-                <div class="swiper-slide__nav-number-wrapper">
-                  <span
-                    class="swiper-slide__nav-number swiper-slide__nav-number--current"
-                  ></span>
-                  <span>/</span>
-                  <span
-                    class="swiper-slide__nav-number swiper-slide__nav-number--total"
-                  ></span>
+                <div class="swiper-slide__desc">
+                  [Tốt hơn 1%] Tại sao càng lớn, ta lại thấy thời gian trôi đi
+                  càng nhanh?
                 </div>
-                <div
-                  class="swiper-slide__nav-button swiper-slide__nav-button--next"
-                >
-                  <img
-                    src="./assets/img/featured-product-section//Arrow.svg"
-                    alt=""
-                  />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__type-border">
+                  <div class="swiper-slide__type">
+                    <span class="swiper-slide__type-content">Podcast</span>
+                  </div>
                 </div>
+                <div class="swiper-slide__desc">
+                  [Tốt hơn 1%] Tại sao càng lớn, ta lại thấy thời gian trôi đi
+                  càng nhanh?
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__type-border">
+                  <div class="swiper-slide__type">
+                    <span class="swiper-slide__type-content">Podcast</span>
+                  </div>
+                </div>
+                <div class="swiper-slide__desc">
+                  [Tốt hơn 1%] Tại sao càng lớn, ta lại thấy thời gian trôi đi
+                  càng nhanh?
+                </div>
+              </div>
+            </div>
+            <img
+              class="swiper-slide__nav-bg"
+              src="./assets/img/featured-product-section/MaskGroup.svg"
+              alt=""
+            />
+            <img
+              class="swiper-slide__nav-bg--mb"
+              src="./assets/img/featured-product-section/MaskGroupMb.svg"
+              alt=""
+            />
+            <div class="swiper-slide__nav">
+              <div
+                class="swiper-slide__nav-button swiper-slide__nav-button--prev"
+              >
+                <img
+                  src="./assets/img/featured-product-section//Arrow.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide__nav-number-wrapper">
+                <span
+                  class="swiper-slide__nav-number swiper-slide__nav-number--current"
+                ></span>
+                <span>/</span>
+                <span
+                  class="swiper-slide__nav-number swiper-slide__nav-number--total"
+                ></span>
+              </div>
+              <div
+                class="swiper-slide__nav-button swiper-slide__nav-button--next"
+              >
+                <img
+                  src="./assets/img/featured-product-section//Arrow.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -847,18 +885,20 @@
       </section>
 
       <!-- Section: Đối tác tin cậy -->
-      <!-- <section class="partner">
+      <section class="partner">
         <div class="partner-inner">
-          <div class="partner__title">
+          <custom-title-v1 class="partner__title">
             <h2>Đối tác</h2>
-          </div>
-          <div class="partner__subtitle">
+          </custom-title-v1>
+          <custom-description-v1 class="partner__subtitle">
             Các Đối Tác Tin Cậy <br />
             Sử Dụng Vova
-          </div>
+          </custom-description-v1>
           <div class="partner__desc">
-            Helping you to protect all your digital activity and data from
-            unwanted third party by using PrismAGI
+            <p>
+              Helping you to protect all your digital activity and data from
+              unwanted third party by using PrismAGI
+            </p>
           </div>
           <div class="partner__list">
             <div class="slider" data-speed="fast">
@@ -887,7 +927,143 @@
           class="partner-bg"
           src="./assets/img/partner/partner-bg.png"
         />
-      </section> -->
+      </section>
+
+      <!-- Section: Tin tức -->
+      <section class="news">
+        <div class="news-inner">
+          <custom-title-v1 class="news__title">
+            <h2>Tin tức</h2>
+          </custom-title-v1>
+          <custom-description-v1 class="news__desc">
+            <p>
+              Cập Nhật Thông Tin <br />
+              Bổ Ích Cùng Vova
+            </p>
+          </custom-description-v1>
+          <div class="news__list">
+            <div class="news-swiper swipper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="/" class="news__item-link">
+                    <article class="news__item">
+                      <img
+                        alt=""
+                        class="news__item-thumbnail"
+                        src="./assets/img/news-section/d_news-1.png"
+                      />
+                      <div class="news__item-content">
+                        <span class="news__item-content__date">02.2025</span>
+                        <div>
+                          <h4 class="news__item-content__title">
+                            Bứt phá trong cuộc đua ngành giáo dục Bứt phá trong
+                            cuộc đua ngành giáo dục
+                          </h4>
+                          <button class="news__item-content__discovery-now">
+                            Khám phá ngay
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="/" class="news__item-link">
+                    <article class="news__item">
+                      <img
+                        alt=""
+                        class="news__item-thumbnail"
+                        src="./assets/img/news-section/d_news-1.png"
+                      />
+                      <div class="news__item-content">
+                        <span class="news__item-content__date">02.2025</span>
+                        <div>
+                          <h4 class="news__item-content__title">
+                            Bứt phá trong cuộc đua ngành giáo dục Bứt phá trong
+                            cuộc đua ngành giáo dục
+                          </h4>
+                          <button class="news__item-content__discovery-now">
+                            Khám phá ngay
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="/" class="news__item-link">
+                    <article class="news__item">
+                      <img
+                        alt=""
+                        class="news__item-thumbnail"
+                        src="./assets/img/news-section/d_news-1.png"
+                      />
+                      <div class="news__item-content">
+                        <span class="news__item-content__date">02.2025</span>
+                        <div>
+                          <h4 class="news__item-content__title">
+                            Bứt phá trong cuộc đua ngành giáo dục Bứt phá trong
+                            cuộc đua ngành giáo dục
+                          </h4>
+                          <button class="news__item-content__discovery-now">
+                            Khám phá ngay
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="/" class="news__item-link">
+                    <article class="news__item">
+                      <img
+                        alt=""
+                        class="news__item-thumbnail"
+                        src="./assets/img/news-section/d_news-1.png"
+                      />
+                      <div class="news__item-content">
+                        <span class="news__item-content__date">02.2025</span>
+                        <div>
+                          <h4 class="news__item-content__title">
+                            Bứt phá trong cuộc đua ngành giáo dục Bứt phá trong
+                            cuộc đua ngành giáo dục
+                          </h4>
+                          <button class="news__item-content__discovery-now">
+                            Khám phá ngay
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="/" class="news__item-link">
+                    <article class="news__item">
+                      <img
+                        alt=""
+                        class="news__item-thumbnail"
+                        src="./assets/img/news-section/d_news-1.png"
+                      />
+                      <div class="news__item-content">
+                        <span class="news__item-content__date">02.2025</span>
+                        <div>
+                          <h4 class="news__item-content__title">
+                            Bứt phá trong cuộc đua ngành giáo dục Bứt phá trong
+                            cuộc đua ngành giáo dục
+                          </h4>
+                          <button class="news__item-content__discovery-now">
+                            Khám phá ngay
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Section: Về chúng tôi -->
       <section class="about-us">
@@ -990,7 +1166,7 @@
     </main>
 
     <footer class="footer">
-      <img src="./assets/img/footer/footer-bg.svg" alt="" class="footer-bg" />
+      <img src="./assets/img/footer/footer-bg.png" alt="" class="footer-bg" />
       <div class="footer-content">
         <div class="footer-content-inner">
           <div class="footer-content-left">
@@ -1268,6 +1444,7 @@
     <script src="./assets/js/hero-section.js"></script>
     <script src="./assets/js/featured-product-section.js"></script>
     <script src="./assets/js/partner-section.js"></script>
+    <script src="./assets/js/news-section.js"></script>
     <script src="./assets/js/increment-number.js"></script>
     <script src="./assets/js/footer.js"></script>
   </body>

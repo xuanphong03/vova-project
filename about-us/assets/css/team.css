@@ -1,0 +1,279 @@
+.lecturer-team {
+  width: 100%;
+}
+.lecturer-team .lecturer-team-inner {
+  width: 87.5rem;
+  margin: 0 auto;
+  padding: 6.25rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.lecturer-team .lecturer-team-left {
+  position: relative;
+  height: 34.0625rem;
+  width: 50.375rem;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.07);
+}
+.lecturer-team .lecturer-team__content {
+  margin-bottom: 2.25em;
+}
+.lecturer-team .lecturer-team__content-subtitle {
+  color: var(--text-body-80-invert, rgba(255, 255, 255, 0.8));
+  text-shadow: 0px 2px 16px rgba(174, 207, 242, 0.24);
+  font-family: Lexend;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.lecturer-team .lecturer-team__content-title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.01563rem;
+  background: linear-gradient(274deg, #d8f8e1 18.77%, #98efaf 52.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.lecturer-team .lecturer-team__content-desc {
+  color: var(--text-body-80-invert, rgba(255, 255, 255, 0.8));
+  font-family: Lexend;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 45.375rem;
+}
+.lecturer-team .lecturer-team__employee {
+  width: 45.375rem;
+}
+.lecturer-team .lecturer-team__employee .swiper-wrapper {
+  width: 100%;
+}
+.lecturer-team .lecturer-team__employee .swiper-slide {
+  max-width: max-content;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  position: relative;
+}
+.lecturer-team .lecturer-team__employee .swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  border: 3px solid transparent;
+  pointer-events: none;
+  transition: border 500ms ease-out;
+}
+.lecturer-team
+  .lecturer-team__employee
+  .swiper-slide.swiper-slide-thumb-active::after {
+  border-color: #28b964;
+}
+
+.lecturer-team .lecturer-team__employee .swiper-slide:not(:first-child) {
+  margin-left: 1rem;
+}
+.lecturer-team .lecturer-team__employee .lecturer-team__employee-item {
+  border-radius: 1.25rem;
+  width: 14.4583rem;
+  height: 14.25rem;
+}
+.lecturer-team .lecturer-team__employee .lecturer-team__employee-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lecturer-team .lecturer-team-right {
+  width: 34.125rem;
+  height: 34.0668rem;
+}
+
+.lecturer-team .lecturer-team__thumbnail {
+  width: 100%;
+  height: 100%;
+}
+.lecturer-team .lecturer-team__thumbnail .swiper-slide {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.lecturer-team .lecturer-team__thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.lecturer-team .lecturer-team__thumbnail .swiper-slide::after {
+  content: "";
+  width: 34.125rem;
+  height: 34.06681rem;
+  display: block;
+  position: absolute;
+  top: -0.00431rem;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(19, 101, 4, 0.64) 100%
+  );
+}
+
+.lecturer-team
+  .lecturer-team__thumbnail
+  .swiper-slide
+  .lecturer-team__employee-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  z-index: 10;
+}
+.lecturer-team
+  .lecturer-team__thumbnail
+  .swiper-slide
+  .lecturer-team__employee-info
+  .lecturer-team__employee-info__name {
+  color: var(--ALL-WHITE, #fff);
+  font-family: SVN-Gilroy;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.3125rem;
+}
+.lecturer-team
+  .lecturer-team__thumbnail
+  .swiper-slide
+  .lecturer-team__employee-info
+  .lecturer-team__employee-info__desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: SVN-Gilroy;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.02rem;
+}
+.lecturer-team__nav-prev,
+.lecturer-team__nav-next {
+  position: absolute;
+  z-index: 50;
+  bottom: 5.625rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1.600000023841858px);
+  cursor: pointer;
+}
+.lecturer-team .lecturer-team__nav-prev {
+  left: 0.5rem;
+}
+.lecturer-team .lecturer-team__nav-next {
+  right: 0.5rem;
+}
+.lecturer-team .lecturer-team__nav-prev img,
+.lecturer-team .lecturer-team__nav-next img {
+  width: 1.25rem;
+}
+.lecturer-team .lecturer-team__nav-next img {
+  rotate: 180deg;
+}
+
+@media (max-width: 639.98px) {
+  .lecturer-team .lecturer-team-inner {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .lecturer-team .lecturer-team-left {
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .lecturer-team .lecturer-team__content {
+    margin-bottom: 1.5rem;
+  }
+  .lecturer-team .lecturer-team__content-title {
+    font-size: 1.75rem;
+    line-height: 120%;
+    letter-spacing: 0.01563rem;
+    margin-bottom: 1rem;
+  }
+  .lecturer-team .lecturer-team__content-desc {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  .lecturer-team .lecturer-team__employee {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+  }
+  .lecturer-team .lecturer-team__employee .lecturer-team__employee-item {
+    width: 5.86563rem;
+    height: 5.86563rem;
+    border-radius: 1.3331rem;
+  }
+  .lecturer-team .lecturer-team-right {
+    flex-basis: 100%;
+    width: 100%;
+    height: 21.401rem;
+  }
+  .lecturer-team .lecturer-team__employee .swiper-slide:not(:first-child) {
+    margin-left: 0.875rem;
+  }
+  .lecturer-team .lecturer-team__thumbnail .swiper-slide::after {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .lecturer-team
+    .lecturer-team__thumbnail
+    .swiper-slide
+    .lecturer-team__employee-info {
+    padding: 0.94231rem;
+  }
+  .lecturer-team
+    .lecturer-team__thumbnail
+    .swiper-slide
+    .lecturer-team__employee-info
+    .lecturer-team__employee-info__name {
+    font-size: 1.37419rem;
+    line-height: 2.08094rem;
+  }
+  .lecturer-team
+    .lecturer-team__thumbnail
+    .swiper-slide
+    .lecturer-team__employee-info
+    .lecturer-team__employee-info__desc {
+    font-size: 0.62819rem;
+    line-height: 0.94231rem;
+    letter-spacing: -0.01256rem;
+  }
+  .lecturer-team .lecturer-team__nav-prev,
+  .lecturer-team .lecturer-team__nav-next {
+    display: none;
+  }
+  .lecturer-team .lecturer-team__employee .swiper-wrapper {
+    height: auto;
+  }
+}

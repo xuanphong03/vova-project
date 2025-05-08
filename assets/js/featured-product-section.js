@@ -5,8 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
     centeredSlides: true,
     loop: true,
     speed: 500,
-    preventClicks: true,
-    slidesPerView: "auto",
+    slidesPerView: !isMobile ? "auto" : 1,
     navigation: {
       nextEl: ".swiper-slide__nav-button--next",
       prevEl: ".swiper-slide__nav-button--prev",
@@ -24,9 +23,17 @@ window.addEventListener("DOMContentLoaded", function () {
       : {},
   });
 
-  const featuredProductSectionEl = document.querySelector(
-    ".featured-product-section"
-  );
+  const planetContentSwiper = new Swiper(".swiper-pagination-wrapper", {
+    loop: true,
+    speed: 500,
+    navigation: {
+      nextEl: ".swiper-slide__nav-button--next",
+      prevEl: ".swiper-slide__nav-button--prev",
+    },
+    effect: "fade",
+  });
+
+  const featuredProductSectionEl = document.querySelector(".featured-product");
   const currentSlideIndexEl = featuredProductSectionEl?.querySelector(
     ".swiper-slide__nav-number--current"
   );

@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-  const sliderEls = document.querySelectorAll(".slider");
+  const sliderEls = document.querySelectorAll(".partner .slider");
 
   // If a user hasn't opted in for recuded motion, then we add the animation
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

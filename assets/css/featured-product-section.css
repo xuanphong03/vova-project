@@ -1,44 +1,44 @@
-.featured-product-section {
+.featured-product {
   position: relative;
   overflow: hidden;
 }
-.featured-product-section .featured-product-inner {
+.featured-product .featured-product-inner {
+  position: relative;
   padding-top: 9.375rem;
-  flex-shrink: 0;
 }
-.featured-product-section .space-station-item {
+.featured-product .space-station-item {
   position: absolute;
   top: 4.3125rem;
   left: 1.6875rem;
   width: 16.29169rem;
   height: 11.5rem;
 }
-.featured-product-section .featured-product-content {
+.featured-product .featured-product-content {
   position: relative;
   margin-bottom: 3.3125rem;
 }
-.featured-product-section .featured-product-content__title {
+.featured-product .featured-product-content__title {
   margin-bottom: 1.5rem;
   max-width: max-content;
   margin-inline: auto;
   display: block;
 }
 
-.featured-product-section .featured-product-content__desc {
+.featured-product .featured-product-content__desc {
   margin: 0 auto;
   width: 48.25rem;
   display: block;
 }
 
-.featured-product-section .swiper {
+.featured-product .swiper {
   width: 87.45994rem;
   height: 45.5625rem;
   margin: 0 auto;
 }
-.featured-product-section .swiper-slide {
+.featured-product .swiper-slide {
   max-width: fit-content;
 }
-.featured-product-section .planet {
+.featured-product .planet {
   position: relative;
   width: 28.70994rem;
   height: 27.75rem;
@@ -46,20 +46,20 @@
   align-items: center;
   justify-content: center;
 }
-.featured-product-section .planet__icon-star {
+.featured-product .planet__icon-star {
   position: absolute;
   width: 0.73631rem;
   height: 0.8415rem;
 }
-.featured-product-section .planet__icon-star:nth-child(1) {
+.featured-product .planet__icon-star:nth-child(1) {
   top: 3.1875rem;
   left: 23.25rem;
 }
-.featured-product-section .planet__icon-star:nth-child(2) {
+.featured-product .planet__icon-star:nth-child(2) {
   top: 22.375rem;
   left: 3.3625rem;
 }
-.featured-product-section .planet__border {
+.featured-product .planet__border {
   position: relative;
   width: 27.75rem;
   height: 27.75rem;
@@ -67,12 +67,12 @@
   pointer-events: none;
   border-radius: 50%;
 }
-.featured-product-section .planet__border img {
+.featured-product .planet__border img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.featured-product-section .planet__image-default {
+.featured-product .planet__image-default {
   position: absolute;
   width: 20.625rem;
   height: 20.625rem;
@@ -85,13 +85,13 @@
   border-radius: 50%;
   overflow: hidden;
 }
-.featured-product-section .planet__image-default img {
+.featured-product .planet__image-default img {
   flex-shrink: 0;
   width: 22.25rem;
   height: 22.25rem;
   object-fit: cover;
 }
-.featured-product-section .planet__image-active {
+.featured-product .planet__image-active {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -102,7 +102,7 @@
   width: 20.625rem;
   height: 20.625rem;
 }
-.featured-product-section .planet__image-active__inner {
+.featured-product .planet__image-active__inner {
   position: absolute;
   width: 0;
   height: 0;
@@ -113,7 +113,7 @@
   transform: translate(-50%, -50%);
   transition: all 600ms ease-in-out;
 }
-.featured-product-section .planet__image-active__inner::after {
+.featured-product .planet__image-active__inner::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -125,7 +125,7 @@
     rgba(0, 0, 0, 1) 100%
   );
 }
-.featured-product-section .planet__image-active__inner > img {
+.featured-product .planet__image-active__inner > img {
   width: 20.625rem;
   height: 20.625rem;
   object-fit: cover;
@@ -134,7 +134,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.featured-product-section
+.featured-product
   .swiper-slide.swiper-slide-active
   .planet
   .planet__image-active__inner {
@@ -142,7 +142,7 @@
   height: 20.625rem;
 }
 
-.featured-product-section .planet__ellipse {
+.featured-product .planet__ellipse {
   position: absolute;
   top: 9.875rem;
   left: 0.5rem;
@@ -150,17 +150,11 @@
   pointer-events: none;
 }
 
-.featured-product-section .planet__ellipse img {
+.featured-product .planet__ellipse img {
   width: 100%;
 }
-.featured-product-section
-  .swiper-slide.swiper-slide-active:hover
-  .planet__image-active__read-more {
-  opacity: 1;
-  visibility: visible;
-}
 
-.featured-product-section .planet__image-active__read-more {
+.featured-product .planet__image-active__read-more {
   position: absolute;
   inset: 0;
   border-radius: 100%;
@@ -176,7 +170,7 @@
   visibility: hidden;
   transition: all 0.3s ease;
 }
-.featured-product-section
+.featured-product
   .planet__image-active__read-more
   .planet__image-active__read-more__text {
   font-size: 1rem;
@@ -187,7 +181,7 @@
   line-height: 1.5rem;
   border-radius: 0.5rem;
 }
-.featured-product-section .planet__image-active__read-more img {
+.featured-product .planet__image-active__read-more img {
   margin-left: 0.5rem;
   width: 1rem;
   height: 1rem;
@@ -198,45 +192,43 @@
   max-width: 100%;
 }
 
-.featured-product-section .swiper-slide .planet__ellipse,
-.featured-product-section .swiper-slide .planet__border,
-.featured-product-section .swiper-slide .planet__ellipse,
-.featured-product-section .swiper-slide .planet__icon-star {
+.featured-product .swiper-slide .planet__ellipse,
+.featured-product .swiper-slide .planet__border,
+.featured-product .swiper-slide .planet__ellipse,
+.featured-product .swiper-slide .planet__icon-star {
   transition: all 500ms ease;
 }
 
-.featured-product-section
-  .swiper-slide:not(.swiper-slide-active)
-  .planet__ellipse,
-.featured-product-section
-  .swiper-slide:not(.swiper-slide-active)
-  .planet__border,
-.featured-product-section
-  .swiper-slide:not(.swiper-slide-active)
-  .planet__ellipse,
-.featured-product-section
-  .swiper-slide:not(.swiper-slide-active)
-  .planet__icon-star {
+.featured-product .swiper-slide:not(.swiper-slide-active) .planet__ellipse,
+.featured-product .swiper-slide:not(.swiper-slide-active) .planet__border,
+.featured-product .swiper-slide:not(.swiper-slide-active) .planet__ellipse,
+.featured-product .swiper-slide:not(.swiper-slide-active) .planet__icon-star {
   opacity: 0;
   visibility: hidden;
 }
 
-.featured-product-section .swiper-pagination-wrapper {
+.featured-product .swiper-pagination-wrapper {
   position: absolute;
   width: 65.6875rem;
   height: 17rem;
-  top: 30.4375rem;
+  top: 52.75rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 50;
 }
-.featured-product-section .swiper-slide__nav-bg {
+.featured-product .swiper-slide__nav-bg {
   width: 100%;
   height: auto;
   object-fit: cover;
   pointer-events: none;
+  border-radius: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 255, 250, 0) 0%,
+    rgba(245, 254, 250, 0.5) 777.67%
+  );
 }
-.featured-product-section .swiper-slide__type {
+.featured-product .swiper-slide__type {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -246,7 +238,7 @@
   border: 1px solid rgba(255, 255, 255, 0);
   background: #000;
 }
-.featured-product-section .swiper-slide__type-border::before {
+.featured-product .swiper-slide__type-border::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -257,7 +249,7 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
-.featured-product-section .swiper-slide__type-content {
+.featured-product .swiper-slide__type-content {
   color: #fff;
   font-size: 0.875rem;
   font-style: normal;
@@ -266,14 +258,11 @@
   letter-spacing: 0.03125rem;
   opacity: 0.8;
 }
-.featured-product-section .swiper-slide__desc {
-  position: absolute;
-  top: 2.625rem;
-  left: 18.75rem;
+.featured-product .swiper-slide__desc {
+  position: relative;
   width: 28.125rem;
   color: #fff;
   text-align: center;
-  /* PC/Title/H4/H4 - Semibold */
   font-family: "Plus Jakarta Sans";
   font-size: 1.5rem;
   font-style: normal;
@@ -281,7 +270,7 @@
   line-height: 140%; /* 2.1rem */
   letter-spacing: 0.00938rem;
 }
-.featured-product-section .swiper-slide__nav {
+.featured-product .swiper-slide__nav {
   position: absolute;
   left: 50%;
   top: 8.6875rem;
@@ -290,9 +279,10 @@
   width: 9.875rem;
   justify-content: space-between;
   align-items: center;
+  z-index: 50;
 }
 
-.featured-product-section .swiper-slide__nav-button {
+.featured-product .swiper-slide__nav-button {
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
@@ -302,23 +292,23 @@
   border-radius: 100%;
   cursor: pointer;
 }
-.featured-product-section .swiper-slide__nav-button img {
+.featured-product .swiper-slide__nav-button img {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
   object-fit: cover;
 }
-.featured-product-section .swiper-slide__nav-button--prev {
+.featured-product .swiper-slide__nav-button--prev {
   rotate: 0deg;
 }
-.featured-product-section .swiper-slide__nav-button--next {
+.featured-product .swiper-slide__nav-button--next {
   rotate: 180deg;
 }
-.featured-product-section .swiper-slide__nav-number-wrapper {
+.featured-product .swiper-slide__nav-number-wrapper {
   color: #fff;
   flex-shrink: 0;
 }
-.featured-product-section .swiper-slide__nav-number {
+.featured-product .swiper-slide__nav-number {
   color: #fff;
   text-align: right;
   font-size: 1rem;
@@ -326,19 +316,19 @@
   font-weight: 400;
   line-height: 160%;
 }
-.featured-product-section .swiper-slide__type-border {
+.featured-product .swiper-slide__type-border {
   padding: 1px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 22.75rem;
-  position: absolute;
-  top: -0.6rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  width: fit-content;
+  display: block;
+  margin-bottom: 1.725rem;
 }
-.featured-product-section .swiper-wrapper {
+.featured-product .planet-slider .swiper-wrapper {
   transition-timing-function: cubic-bezier(0.91, 0.02, 0.13, 0.99) !important;
 }
-.featured-product-section .meteorite-item {
+.featured-product .meteorite-item {
   position: absolute;
   top: 6.9375rem;
   left: 89.1875rem;
@@ -346,147 +336,193 @@
   height: 9.125rem;
   pointer-events: none;
 }
+.swiper-pagination-wrapper {
+  z-index: -1;
+}
+.swiper-pagination-wrapper .swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.swiper-pagination-wrapper .swiper-wrapper .swiper-slide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.swiper-pagination-wrapper .swiper-wrapper .swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.swiper-pagination-wrapper .swiper-wrapper .swiper-slide {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 639.98px) {
-  .featured-product-section .swiper-slide:not(.swiper-slide-active) {
+  .featured-product .planet-slider .swiper-slide:not(.swiper-slide-active) {
     margin-top: 0.75rem;
   }
-  .featured-product-section
+  .featured-product
+    .swiper-slide.swiper-slide-active:hover
+    .planet__image-active__read-more {
+    opacity: 1;
+    visibility: visible;
+  }
+  .featured-product
+    .planet-slider
     .swiper-slide:not(.swiper-slide-active)
     .planet__image-default,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide:not(.swiper-slide-active)
     .planet__image-active {
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 12.5rem;
+    height: 12.5rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide:not(.swiper-slide-active)
     .planet__image-default
     img,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide:not(.swiper-slide-active)
     .planet__image-active
     img {
     width: 100%;
     height: 100%;
   }
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-prev
     .planet__image-default,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-next
     .planet__image-default,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-prev
     .planet__image-active,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-next
     .planet__image-active {
-    width: 14.375rem;
-    height: 14.375rem;
+    width: 18.375rem;
+    height: 18.375rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-prev
     .planet__image-default
     img,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-next
     .planet__image-default
     img,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-prev
     .planet__image-active
     img,
-  .featured-product-section
+  .featured-product
+    .planet-slider
     .swiper-slide.swiper-slide-next
     .planet__image-active
     img {
     width: 100%;
     height: 100%;
   }
-  .featured-product-section .swiper-slide__nav-bg--mb {
+  .featured-product .swiper-slide__nav-bg--mb {
     display: none;
   }
 }
 
 @media (max-width: 639.98px) {
-  .featured-product-section .featured-product-inner {
+  .featured-product .featured-product-inner {
     padding-top: 0;
   }
-  .featured-product-section .space-station-item {
+  .featured-product .featured-product-content {
+    margin-bottom: 0.625rem;
+  }
+  .featured-product .space-station-item {
     left: -1rem;
     top: 5.625rem;
     width: 4.78125rem;
     height: 3.375rem;
     aspect-ratio: 76.5/54;
   }
-  .featured-product-section .featured-product-content__title {
+  .featured-product .featured-product-content__title {
     margin-bottom: 0.625rem;
   }
-  .featured-product-section .featured-product-content__desc {
+  .featured-product .featured-product-content__desc {
+    width: 100%;
+    padding: 0 0.875rem;
+  }
+  .featured-product .swiper.planet-slider {
     width: 100%;
   }
-  .featured-product-section .swiper {
-    width: 100%;
-  }
-  .featured-product-section .planet {
+  .featured-product .planet {
     width: 100%;
     height: 19.25rem;
   }
-  .featured-product-section .planet__border {
+  .featured-product .planet__border {
     width: 19.38581rem;
     height: 19.38581rem;
   }
-  .featured-product-section .planet__image-default,
-  .featured-product-section .planet__image-active {
+  .featured-product .planet__image-default,
+  .featured-product .planet__image-active {
     width: 14.40838rem;
     height: 14.40838rem;
   }
-  .featured-product-section .planet__image-default img,
-  .featured-product-section .planet__image-active img {
+  .featured-product .planet__image-default img,
+  .featured-product .planet__image-active img {
     width: 16.24213rem;
     height: 16.24213rem;
   }
-  .featured-product-section .planet__ellipse {
+  .featured-product .planet__ellipse {
     top: 8rem;
     left: 0.25rem;
     right: -0.45rem;
   }
-  .featured-product-section .swiper {
+  .featured-product .swiper {
     height: 31.05566rem;
   }
-  .featured-product-section .swiper-pagination-wrapper {
-    top: 20.75rem;
+  .featured-product .swiper-pagination-wrapper {
+    top: 26.4375rem;
     width: 100%;
   }
-  .featured-product-section .swiper-slide__desc {
-    top: 2.5rem;
+  .featured-product .swiper-slide__desc {
     font-size: 1.125rem;
     width: 19rem;
-    left: 50%;
-    transform: translateX(-50%);
   }
-  .featured-product-section .swiper-slide__nav {
+  .featured-product .swiper-slide__nav {
     top: 7.275rem;
     justify-content: unset;
   }
-  .featured-product-section .swiper-slide__nav-number {
+  .featured-product .swiper-slide__nav-number {
     font-size: 0.875rem;
   }
-  .featured-product-section .swiper-slide__nav-number-wrapper {
+  .featured-product .swiper-slide__nav-number-wrapper {
     margin: 0 0.875rem;
     opacity: 0.7;
   }
-  .featured-product-section .swiper-slide__nav-bg {
+  .featured-product .swiper-slide__nav-bg {
     display: none;
   }
-  .featured-product-section .swiper-slide__nav-bg--mb {
+  .featured-product .swiper-slide__nav-bg--mb {
     width: 21.4375rem;
     height: 3.24319rem;
     object-fit: cover;
@@ -495,20 +531,23 @@
     transform: translateX(-50%);
     top: 5.5rem;
   }
-  .featured-product-section .planet__icon-star:nth-child(1) {
+  .featured-product .planet__icon-star:nth-child(1) {
     top: 3rem;
     left: 16.625rem;
   }
-  .featured-product-section .planet__icon-star:nth-child(2) {
+  .featured-product .planet__icon-star:nth-child(2) {
     top: 16.5rem;
     left: 3rem;
   }
-  .featured-product-section .meteorite-item {
+  .featured-product .meteorite-item {
     top: unset;
     left: unset;
     right: 0rem;
     bottom: 9.30569rem;
     width: 4.1875rem;
     height: 4.75rem;
+  }
+  .featured-product .swiper-slide__type-border {
+    margin-bottom: 1rem;
   }
 }

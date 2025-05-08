@@ -1,0 +1,194 @@
+.discover {
+    position: relative;
+    height: 49.25rem;
+}
+.discover_bg {
+    position: absolute;
+    height: 49.25rem;
+    width: 100%;
+    object-fit: contain;
+}
+.discover_bg-1 {
+    position: absolute;
+    width: 13.97369rem;
+    height: 14.0605rem;
+    left: 11.12rem;
+    bottom: 25.88rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+.discover_bg_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    object-fit: cover;
+}
+.discover_bg_blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    filter: blur(100px);
+    opacity: 0.5;
+}
+.discover_bg-2 {
+    position: absolute;
+    width: 11.18606rem;
+    height: 11.2555rem;
+    right: 11.5rem;
+    bottom: 22.56rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+.discover_bg-3 {
+    position: absolute;
+    width: 9.4625rem;
+    height: 9.52125rem;
+    left: 7.25rem;
+    bottom: 4.29rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+.discover_bg-4 {
+    position: absolute;
+    width: 6.87713rem;
+    height: 6.91981rem;
+    right: 3.945rem;
+    bottom: 3.14rem;
+    border-radius: 100%;
+    z-index: 10;
+}
+.discover-content {
+    position: absolute;
+    width: 36.6875rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discover-content_title p {
+    color: #fff;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 4.2rem */
+    letter-spacing: 0.01563rem;
+}
+.discover-content_title strong {
+    background: linear-gradient(90deg, #3ecc00 0%, #72e896 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Plus Jakarta Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.01563rem;
+}
+.discover-content_title {
+    margin-bottom: 1rem;
+}
+.discover-content_desc {
+    color: #c5c5c5;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 1.6rem */
+}
+.discover_bg_mb {
+    display: none;
+}
+@media (max-width: 639px) {
+    .discover {
+        height: 29.37rem;
+    }
+    .discover_bg {
+        height: 29.37rem;
+    }
+    .discover_bg {
+        display: none;
+    }
+    .discover_bg_mb {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .discover_bg-1 {
+        width: 3.739rem;
+        height: 3.76225rem;
+        top: 4.26rem;
+        bottom: unset;
+        left: 3.51rem;
+    }
+    .discover_bg-2 {
+        width: 2.64213rem;
+        height: 2.65856rem;
+        bottom: unset;
+        top: 5.52rem;
+        right: 3.98rem;
+    }
+    .discover_bg-3 {
+        width: 1.94981rem;
+        height: 1.96194rem;
+        bottom: unset;
+        top: 9.06rem;
+        left: 1.69rem;
+    }
+    .discover_bg-4 {
+        width: 1.41713rem;
+        height: 1.42594rem;
+        bottom: unset;
+        top: 10.42rem;
+        right: 2.42rem;
+    }
+    .discover-content {
+        width: 100%;
+        left: unset;
+        transform: translate(0);
+        top: 10.37rem;
+        padding: 0 1.53rem;
+    }
+    .discover-content_title p {
+        color: #fff;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 1.875rem */
+        letter-spacing: -0.03125rem;
+    }
+    .discover-content_title strong {
+        background: linear-gradient(90deg, #3ecc00 0%, #72e896 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: -0.03125rem;
+    }
+    .discover-content_title {
+        margin-bottom: 0.75rem;
+    }
+    .discover-content_desc {
+        color: #fff;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 1.4rem */
+        opacity: 0.6;
+    }
+}

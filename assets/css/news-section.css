@@ -1,0 +1,193 @@
+.news {
+  position: relative;
+  margin-bottom: 7.5rem;
+}
+.news .news__title {
+  display: block;
+  margin-bottom: 1.5rem;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+.news .news__desc {
+  display: block;
+  width: 28.4375rem;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+.news .news__list {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.news .news__list::-webkit-scrollbar {
+  display: none;
+}
+.news .news__item-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+.news .news__item-link:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.news .news__item {
+  position: relative;
+  width: 25.4375rem;
+  height: 15.5625rem;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+.news .news__item-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news .news__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 9.75rem;
+  left: 0;
+  top: 0;
+  opacity: 0.32;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 33.34%,
+    rgba(0, 0, 0, 0) 78.45%
+  );
+  display: block;
+  z-index: 2;
+}
+.news .news__item::after {
+  content: "";
+  position: absolute;
+  width: 25.875rem;
+  height: 11.0625rem;
+  opacity: 0.9;
+  background: linear-gradient(0deg, #000 29.1%, rgba(0, 0, 0, 0) 77.6%);
+  left: -0.25rem;
+  bottom: -0.25rem;
+  display: block;
+  z-index: 2;
+}
+.news .news__item-content {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+}
+.news .news__item-content__date {
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.00625rem;
+}
+.news .news__item-content__title {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.news .news__item-content__discovery-now {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.00938rem;
+  text-transform: uppercase;
+  background: transparent;
+}
+.news .news-swiper {
+  width: 100%;
+}
+.news .news-swiper .swiper-wrapper {
+  width: 100%;
+  transition-timing-function: linear !important;
+}
+.news .news-swiper .swiper-wrapper .swiper-slide {
+  max-width: max-content;
+}
+.news .news-swiper .swiper-wrapper .swiper-slide:not(:first-child) {
+  margin-left: 1.5rem;
+}
+@media (max-width: 639.98px) {
+  .news .news {
+    margin-bottom: 4.5rem;
+  }
+  .news .news__title {
+    margin-bottom: 0.625rem;
+  }
+  .news .news__desc {
+    width: 100%;
+    padding: 0 1.875rem;
+    margin-bottom: 2.37rem;
+  }
+  .news .news__list {
+    padding: 0 1rem;
+  }
+  .news .news__item-link:not(:last-child) {
+    margin-right: 0.875rem;
+  }
+  .news .news__item {
+    width: 19.5625rem;
+    height: 11.9375rem;
+    border-radius: 0.5rem;
+  }
+
+  .news .news__item::before {
+    width: 19.5625rem;
+    height: 6.125rem;
+  }
+  .news .news__item::after {
+    width: 100%;
+    height: 11.0625rem;
+  }
+  .news .news__item-content {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+  }
+  .news .news__item-content__date {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .news .news__item-content__title {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  .news .news__item-content__discovery-now {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}

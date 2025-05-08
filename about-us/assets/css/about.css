@@ -1,0 +1,136 @@
+.about {
+  position: relative;
+  width: 100%;
+  height: 49.25rem;
+}
+.about .about__content {
+  position: absolute;
+  top: 7.625rem;
+  left: 6.25rem;
+  display: flex;
+  align-items: flex-start;
+}
+.about .about__content-title {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+  margin-top: 0.75rem;
+}
+.about .about__content-title__number {
+  margin-right: 0.5rem;
+}
+.about .about__content-title__number,
+.about .about__content-title__content {
+  color: var(--ALL-WHITE, #fff);
+  text-shadow: 0px 2px 16px rgba(174, 207, 242, 0.24);
+  font-family: Lexend;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+}
+
+.about .about__content-desc {
+  width: 53.24981rem;
+  color: var(--White-100, #fff);
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.about .about__slogan {
+  position: absolute;
+  width: 26.12181rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Lexend;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  top: 23.7577rem;
+  left: 19.182rem;
+}
+.about .about__planet {
+  position: absolute;
+  width: 26.21513rem;
+  height: 19.66131rem;
+  top: 26.5702rem;
+  left: 41.2186rem;
+}
+.about .about__planet img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .about__image {
+  position: absolute;
+  top: 22.65rem;
+  left: 62.5rem;
+  width: 31.25rem;
+  height: 20.83331rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.about .about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about .about__content-slogan-mb,
+.about .about__content-thumbnail-img-mb {
+  display: none;
+}
+@media (max-width: 639.98px) {
+  .about {
+    height: auto;
+    margin-bottom: 2.5rem;
+  }
+  .about .about__content {
+    position: static;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+  .about .about__content-desc {
+    width: 100%;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+  }
+
+  .about .about__slogan,
+  .about .about__planet,
+  .about .about__image {
+    display: none;
+  }
+  .about .about__content-title {
+    margin-bottom: 1.5rem;
+  }
+  .about .about__content-slogan-mb {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Lexend;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.03125rem;
+  }
+  .about .about__content-thumbnail-img-mb {
+    display: block;
+    width: 100%;
+    height: 16.07813rem;
+    border-radius: 1.33331rem;
+    overflow: hidden;
+  }
+  .about .about__content-thumbnail-img-mb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
